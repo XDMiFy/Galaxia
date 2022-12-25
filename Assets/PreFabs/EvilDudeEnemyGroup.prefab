@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6899247580632366707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6899247580632366716}
+  - component: {fileID: 6899247580632366717}
+  m_Layer: 0
+  m_Name: EvilDudeEnemyGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6899247580632366716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899247580632366707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 3.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6899247579965266305}
+  - {fileID: 6680233496312170169}
+  - {fileID: 6680233496115242398}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6899247580632366717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899247580632366707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c871e9d91a135c42b26fa847c7131d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dude1: {fileID: 6899247579965266309}
+  dude2: {fileID: 6680233496312170173}
+  dude3: {fileID: 6680233496115242394}
+--- !u!1001 &6680233495787746896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6899247580632366716}
+    m_Modifications:
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188180, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_Name
+      value: EvilDude
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+--- !u!4 &6899247579965266305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6680233495787746896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6899247579965266309 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 219543774443188181, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6680233495787746896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0167b6bf9a228f74c9fdc0a471b6b38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6899247580481317224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6899247580632366716}
+    m_Modifications:
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188180, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_Name
+      value: EvilDude (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+--- !u!4 &6680233496312170169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6899247580481317224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6680233496312170173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 219543774443188181, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6899247580481317224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0167b6bf9a228f74c9fdc0a471b6b38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6899247580828977743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6899247580632366716}
+    m_Modifications:
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 219543774443188180, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+      propertyPath: m_Name
+      value: EvilDude (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+--- !u!4 &6680233496115242398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 219543774443188177, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6899247580828977743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6680233496115242394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 219543774443188181, guid: adb2743d98036db4396ca8ed2b3c31b3, type: 3}
+  m_PrefabInstance: {fileID: 6899247580828977743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0167b6bf9a228f74c9fdc0a471b6b38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
