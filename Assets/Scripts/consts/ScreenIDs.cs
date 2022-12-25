@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ScreenIDs
 {
-    public static int GameSceneID = 0; 
-    public static int WinScreenID = 1;
-    public static int LoseScreenID = 2;
-    public static int StartingSceenID = 3;
+    public static int GameSceneID = 1; 
+    public static int WinScreenID = 2;
+    public static int LoseScreenID = 3;
+    public static int StartingSceenID = 0;
 }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpaceShip : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class SpaceShip : MonoBehaviour
             }
         }
 
-         bool IsPew = Input.GetKey(KeyCode.K);
+         bool IsPew = Input.GetKeyUp(KeyCode.K);
         if (IsPew == true){
             GameObject BulletClone = Instantiate(bullet);
             BulletClone.transform.position = transform.position;
@@ -51,6 +52,7 @@ public class SpaceShip : MonoBehaviour
             healthPoints -= evilPewScript.damage;
             Destroy(theCauseOfCrash);
             if(healthPoints <= 0){
+                SceneManager.LoadSceneAsync(ScreenIDs.LoseScreenID);
                 Destroy(gameObject);
             }
         }
