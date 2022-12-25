@@ -465,4 +465,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0167b6bf9a228f74c9fdc0a471b6b38c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletExample: {fileID: 6933764672618574373, guid: 4665dfe8d0bdc8c44a9319657cc0d8fc, type: 3}
   evilHP: 50

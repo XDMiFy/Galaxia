@@ -17,6 +17,8 @@ public class EvilDudeEnemyGroup : BasedGroup
         sheep.Add(dude1);
         sheep.Add(dude2);
         sheep.Add(dude3);
+
+        InvokeRepeating("GroupShoot", 0.0f, 1.0f);
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class EvilDudeEnemyGroup : BasedGroup
         && dude2 == null 
         && dude3 == null){
             isNotBoom = false;
+            CancelInvoke("GroupShoot");
         }
         if( oneDirection == -1)
         {

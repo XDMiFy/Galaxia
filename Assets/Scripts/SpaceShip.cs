@@ -46,9 +46,9 @@ public class SpaceShip : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D Crash){
         GameObject theCauseOfCrash = Crash.gameObject;
-        EvilPew evilPewScript = theCauseOfCrash.GetComponent<EvilPew>();
+        EnemyBullet evilPewScript = theCauseOfCrash.GetComponent<EnemyBullet>();
         if( evilPewScript != null){
-            healthPoints -= evilPewScript.evilDMG;
+            healthPoints -= evilPewScript.damage;
             Destroy(theCauseOfCrash);
             if(healthPoints <= 0){
                 Destroy(gameObject);

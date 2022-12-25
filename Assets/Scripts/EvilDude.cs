@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EvilDude : MonoBehaviour
 {
+    public GameObject bulletExample;
     public int evilHP = 50;
     private SpriteRenderer pulpyRenderer;
     private float halfWidth;
@@ -35,6 +36,7 @@ public class EvilDude : MonoBehaviour
         }
     }
     public void Shoot(){
-
+        GameObject clone = Instantiate(bulletExample);
+        clone.transform.position = transform.position;
     }
 }

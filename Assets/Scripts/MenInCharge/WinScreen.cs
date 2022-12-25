@@ -11,4 +11,7 @@ public class WinScreen : MonoBehaviour
    public void Restart(){
     SceneManager.LoadSceneAsync(ScreenIDs.GameSceneID);
    }
+   public void TurnToAshes(){
+      SceneManager.LoadSceneAsync(ScreenIDs.StartingSceenID);
+   }
 }
