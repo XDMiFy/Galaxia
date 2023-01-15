@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class LVLWoman : MonoBehaviour
 {
     public GameObject OrigGroup;
-    private EvilDudeEnemyGroup currentScript; 
+    public GameObject WreckGroupOrig;
+    private BasedGroup currentScript; 
     private int amount = 0;
+    private EnemyGroupType[] evilTypes = { EnemyGroupType.evilDudeGroup, EnemyGroupType.wreckGroup};
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class LVLWoman : MonoBehaviour
     {
         if( currentScript.isNotBoom == false && currentScript != null){
             Destroy(currentScript.gameObject);
-            if( amount == 3){
+            if( amount == evilTypes.Length){
                 SceneManager.LoadSceneAsync(ScreenIDs.WinScreenID);
             }else
             {
@@ -33,8 +35,15 @@ public class LVLWoman : MonoBehaviour
 
     void CreateNewGroup()
     {
+        if (evilTypes[amount] == EnemyGroupType.evilDudeGroup){
         GameObject NewGroup = Instantiate(OrigGroup);
         NewGroup.transform.position = transform.position; 
         currentScript = NewGroup.GetComponent<EvilDudeEnemyGroup>();
+        } else if (evilTypes[amount] == EnemyGroupType.wreckGroup){
+            GameObject NewGroup = Instantiate(WreckGroupOrig);
+        NewGroup.transform.position = transform.position; 
+        currentScript = NewGroup.GetComponent<WreckEnemyGroup>();
+        }
     }
 }
+//sandwiches
