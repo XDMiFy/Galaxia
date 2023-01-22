@@ -24,6 +24,11 @@ public class SpaceShip : MonoBehaviour
         Vector3 checkLPos = new Vector3(newLPos.x - halfWidth, newLPos.y, 0);
         Vector3 checkRPos = new Vector3(newRPos.x + halfWidth, newRPos.y, 0);
 
+        Vector3 newUPos = new Vector3(transform.position.x, transform.position.y + speed, 0);
+        Vector3 newDPos = new Vector3(transform.position.x, transform.position.y - speed, 0);
+        Vector3 checkUPos = new Vector3(newUPos.x, newUPos.y + halfWidth, 0);
+        Vector3 checkDPos = new Vector3(newDPos.x, newDPos.y - halfWidth, 0);
+
         if (Input.GetKey(KeyCode.D)) {
             bool check = ScreenHelpers.ObjectNah(checkRPos);
             if (check) {
@@ -38,7 +43,21 @@ public class SpaceShip : MonoBehaviour
             }
         }
 
-         bool IsPew = Input.GetKeyUp(KeyCode.K);
+        if (Input.GetKey(KeyCode.W)) {
+            bool check = ScreenHelpers.ObjectNah(checkUPos);
+            if (check) {
+                transform.position = newUPos; 
+            }            
+        }
+
+        if (Input.GetKey(KeyCode.S)) {
+            bool check = ScreenHelpers.ObjectNah(checkDPos);
+            if (check) {
+                transform.position = newDPos; 
+            }            
+        }
+
+         bool IsPew = Input.GetKey(KeyCode.K);
         if (IsPew == true){
             GameObject BulletClone = Instantiate(bullet);
             BulletClone.transform.position = transform.position;
@@ -52,6 +71,13 @@ public class SpaceShip : MonoBehaviour
             healthPoints -= evilPewScript.damage;
             Destroy(theCauseOfCrash);
             if(healthPoints <= 0){
+                SceneManager.LoadSceneAsync(ScreenIDs.LoseScreenID);
+                Destroy(gameObject);
+            }
+        } else {
+            WreckTeleg teleg = theCauseOfCrash.GetComponent<WreckTeleg>();
+            if (teleg != null) {
+                Destroy(theCauseOfCrash);
                 SceneManager.LoadSceneAsync(ScreenIDs.LoseScreenID);
                 Destroy(gameObject);
             }

@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WreckEnemyGroup : BasedGroup
+
 {
-    // Start is called before the first frame update
+    public WreckTeleg firstTeleg;
+    public WreckTeleg secondTeleg;
+    // Start is called before ligma
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    //what is ligma?
     void Update()
     {
-        
+        if( firstTeleg == null && secondTeleg == null){
+            isNotBoom = false;
+        }
     }
 }

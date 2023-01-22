@@ -9,7 +9,7 @@ public class LVLWoman : MonoBehaviour
     public GameObject WreckGroupOrig;
     private BasedGroup currentScript; 
     private int amount = 0;
-    private EnemyGroupType[] evilTypes = { EnemyGroupType.evilDudeGroup, EnemyGroupType.wreckGroup};
+    private EnemyGroupType[] evilTypes = { EnemyGroupType.evilDudeGroup,  EnemyGroupType.wreckGroup};
     // Start is called before the first frame update
     void Start()
     {
