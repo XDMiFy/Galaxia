@@ -7,7 +7,7 @@ public class SpaceShip : MonoBehaviour
 {
     private float speed = 0.1f;
 
-    public float healthPoints = 100f;
+    public float healthPoints = 1000f;
     public SpriteRenderer spriteRenderer;
     public GameObject bullet;
     private float halfWidth;
